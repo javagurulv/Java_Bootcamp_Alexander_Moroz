@@ -1,7 +1,7 @@
-package finalproject.validation.rules;
+package main.java.validation.rules;
 
-import finalproject.Product;
-import finalproject.ProductDatabase;
+import main.java.Product;
+import main.java.ProductDatabase;
 
 public class ProductNotDuplicateRule implements ProductValidationRule {
 
@@ -23,6 +23,6 @@ public class ProductNotDuplicateRule implements ProductValidationRule {
 
     @Override
     public String getErrorMessage() {
-        return "Product name must be unique!";
+        return "main.java.Product name must be unique!";
     }
 }

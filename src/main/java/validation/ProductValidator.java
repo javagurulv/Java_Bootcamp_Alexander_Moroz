@@ -1,7 +1,7 @@
-package finalproject.validation;
+package main.java.validation;
 
-import finalproject.Product;
-import finalproject.validation.rules.ProductValidationRule;
+import main.java.Product;
+import main.java.validation.rules.ProductValidationRule;
 
 import java.util.ArrayList;
 import java.util.List;

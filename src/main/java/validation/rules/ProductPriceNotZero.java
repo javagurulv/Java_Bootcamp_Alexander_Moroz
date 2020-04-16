@@ -1,6 +1,6 @@
-package finalproject.validation.rules;
+package main.java.validation.rules;
 
-import finalproject.Product;
+import main.java.Product;
 
 public class ProductPriceNotZero implements ProductValidationRule {
     @Override
@@ -14,6 +14,6 @@ public class ProductPriceNotZero implements ProductValidationRule {
 
     @Override
     public String getErrorMessage() {
-        return "Product price cannot be 0 EUR!";
+        return "main.java.Product price cannot be 0 EUR!";
     }
 }

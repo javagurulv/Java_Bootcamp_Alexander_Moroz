@@ -1,10 +1,10 @@
-package finalproject;
+package main.java;
 
-import finalproject.validation.ProductValidator;
-import finalproject.validation.rules.ProductNameNotEmptyRule;
-import finalproject.validation.rules.ProductNotDuplicateRule;
-import finalproject.validation.rules.ProductPriceNotZero;
-import finalproject.validation.rules.ProductValidationRule;
+import main.java.validation.ProductValidator;
+import main.java.validation.rules.ProductNameNotEmptyRule;
+import main.java.validation.rules.ProductNotDuplicateRule;
+import main.java.validation.rules.ProductPriceNotZero;
+import main.java.validation.rules.ProductValidationRule;
 
 import java.util.ArrayList;
 import java.util.List;

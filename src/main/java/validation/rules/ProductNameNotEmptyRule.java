@@ -1,6 +1,6 @@
-package finalproject.validation.rules;
+package main.java.validation.rules;
 
-import finalproject.Product;
+import main.java.Product;
 
 public class ProductNameNotEmptyRule implements ProductValidationRule {
 

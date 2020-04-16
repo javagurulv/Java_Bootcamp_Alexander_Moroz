@@ -1,6 +1,6 @@
-package finalproject;
+package main.java;
 
-import finalproject.validation.ProductValidator;
+import main.java.validation.ProductValidator;
 
 import java.util.List;
 
