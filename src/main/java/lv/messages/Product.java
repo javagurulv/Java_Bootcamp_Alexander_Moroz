@@ -1,4 +1,4 @@
-package main.java;
+package lv.messages;
 
 public class Product {
 
@@ -52,7 +52,7 @@ public class Product {
 
     @Override
     public String toString() {
-        return "main.java.Product{" +
+        return "lv.messages.Product{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", price=" + price +

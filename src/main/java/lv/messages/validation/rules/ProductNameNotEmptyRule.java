@@ -1,7 +1,9 @@
-package main.java.validation.rules;
+package lv.messages.validation.rules;
 
-import main.java.Product;
+import lv.messages.Product;
+import org.springframework.stereotype.Component;
 
+@Component
 public class ProductNameNotEmptyRule implements ProductValidationRule {
 
     @Override

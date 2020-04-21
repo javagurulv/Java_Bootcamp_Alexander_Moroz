@@ -1,14 +1,17 @@
-package main.java;
+package lv.messages;
 
-import main.java.validation.ProductValidator;
+import lv.messages.validation.ProductValidator;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
-
+@Component
 public class ProductService {
 
     private ProductDatabase database;
     private ProductValidator productValidator;
 
+    @Autowired
     public ProductService(ProductDatabase database,
                           ProductValidator productValidator) {
         this.database = database;

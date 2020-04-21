@@ -1,4 +1,4 @@
-package main.java;
+package lv.messages;
 
 import java.util.List;
 

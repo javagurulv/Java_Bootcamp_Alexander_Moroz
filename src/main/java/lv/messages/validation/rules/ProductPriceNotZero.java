@@ -1,7 +1,9 @@
-package main.java.validation.rules;
+package lv.messages.validation.rules;
 
-import main.java.Product;
+import lv.messages.Product;
+import org.springframework.stereotype.Component;
 
+@Component
 public class ProductPriceNotZero implements ProductValidationRule {
     @Override
     public boolean isValid(Product product) {
@@ -14,6 +16,6 @@ public class ProductPriceNotZero implements ProductValidationRule {
 
     @Override
     public String getErrorMessage() {
-        return "main.java.Product price cannot be 0 EUR!";
+        return "lv.messages.Product price cannot be 0 EUR!";
     }
 }

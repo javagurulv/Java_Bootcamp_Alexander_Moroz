@@ -1,10 +1,12 @@
-package main.java;
+package lv.messages;
 
-import main.java.validation.ProductValidator;
-import main.java.validation.rules.ProductNameNotEmptyRule;
-import main.java.validation.rules.ProductNotDuplicateRule;
-import main.java.validation.rules.ProductPriceNotZero;
-import main.java.validation.rules.ProductValidationRule;
+import lv.messages.validation.ProductValidator;
+import lv.messages.validation.rules.ProductNameNotEmptyRule;
+import lv.messages.validation.rules.ProductNotDuplicateRule;
+import lv.messages.validation.rules.ProductPriceNotZero;
+import lv.messages.validation.rules.ProductValidationRule;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,16 +15,21 @@ import java.util.Scanner;
 public class ProductUI {
 
     public static void main(String[] args) {
-        ProductDatabase database = new ProductDatabase();
+//        ProductDatabase database = new ProductDatabase();
+//
+//        List<ProductValidationRule> rules = new ArrayList<>();
+//        rules.add(new ProductNameNotEmptyRule());
+//        rules.add(new ProductNotDuplicateRule(database));
+//        rules.add(new ProductPriceNotZero());
+//
+//        ProductValidator productValidator = new ProductValidator(rules);
+//
+//        ProductService productService = new ProductService(database, productValidator);
 
-        List<ProductValidationRule> rules = new ArrayList<>();
-        rules.add(new ProductNameNotEmptyRule());
-        rules.add(new ProductNotDuplicateRule(database));
-        rules.add(new ProductPriceNotZero());
+        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(SpringConfig.class);
+        ProductService productService = applicationContext.getBean(ProductService.class);
 
-        ProductValidator productValidator = new ProductValidator(rules);
 
-        ProductService productService = new ProductService(database, productValidator);
 
         while (true) {
             // print menu

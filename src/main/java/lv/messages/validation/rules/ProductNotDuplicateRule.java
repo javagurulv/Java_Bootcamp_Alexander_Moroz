@@ -1,12 +1,16 @@
-package main.java.validation.rules;
+package lv.messages.validation.rules;
 
-import main.java.Product;
-import main.java.ProductDatabase;
+import lv.messages.Product;
+import lv.messages.ProductDatabase;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
 public class ProductNotDuplicateRule implements ProductValidationRule {
 
     private ProductDatabase database;
 
+    @Autowired
     public ProductNotDuplicateRule(ProductDatabase database) {
         this.database = database;
     }
@@ -23,6 +27,6 @@ public class ProductNotDuplicateRule implements ProductValidationRule {
 
     @Override
     public String getErrorMessage() {
-        return "main.java.Product name must be unique!";
+        return "lv.messages.Product name must be unique!";
     }
 }

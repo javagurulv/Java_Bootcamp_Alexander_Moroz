@@ -1,8 +1,10 @@
-package main.java;
+package lv.messages;
+
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
-
+@Component
 public class ProductDatabase {
     private int currentID = 1;
     private List<Product> products = new ArrayList<>();

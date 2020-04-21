@@ -1,6 +1,6 @@
-package main.java.validation.rules;
+package lv.messages.validation.rules;
 
-import main.java.Product;
+import lv.messages.Product;
 
 public interface ProductValidationRule {
 

@@ -1,15 +1,18 @@
-package main.java.validation;
+package lv.messages.validation;
 
-import main.java.Product;
-import main.java.validation.rules.ProductValidationRule;
+import lv.messages.Product;
+import lv.messages.validation.rules.ProductValidationRule;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
-
+@Component
 public class ProductValidator {
 
     private List<ProductValidationRule> rules;
 
+    @Autowired
     public ProductValidator(List<ProductValidationRule> rules) {
         this.rules = rules;
     }
